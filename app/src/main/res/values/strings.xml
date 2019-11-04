@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KosTrakanPwt</string>
+    <string name="search_hint">Cari nama tempat atau alamat</string>
+    <string name="kos_putra">Kost Putra</string>
+    <string name="kos_putri">Kost Putri</string>
+    <string name="kos_campur">Kost Campur</string>
+    <string name="kontrakan">Kontrakan</string>
+</resources>

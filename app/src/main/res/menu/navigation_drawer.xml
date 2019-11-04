@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/groupTop"
+        android:checkableBehavior="single">
+        <item android:id="@+id/navBeranda" android:title="Beranda"
+            android:icon="@drawable/nav_beranda"/>
+        <item android:id="@+id/navFavorit" android:title="Favorit"
+            android:icon="@drawable/nav_favorit"/>
+    </group>
+
+    <group
+        android:id="@+id/groupMid"
+        android:checkableBehavior="single">
+
+        <item android:title="Kategori">
+            <menu>
+                <item android:id="@+id/navKosPutra" android:title="Kost Putra"
+                    android:icon="@drawable/nav_putra"/>
+                <item android:id="@+id/navKosPutri" android:title="Kost Putri"
+                    android:icon="@drawable/nav_putri"/>
+                <item android:id="@+id/navKosCampur" android:title="Kost Campur"
+                    android:icon="@drawable/nav_campur"/>
+                <item android:id="@+id/navKontrakan" android:title="Kontrakan"
+                    android:icon="@drawable/nav_kontrakan"/>
+            </menu>
+        </item>
+
+    </group>
+
+    <group
+        android:id="@+id/groupBottom"
+        android:checkableBehavior="single">
+        <item android:id="@+id/navTentangKami" android:title="Tentang Kami"
+            android:icon="@drawable/nav_settings"/>
+    </group>
+
+</menu>
