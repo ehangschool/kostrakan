@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_title_login"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textLayoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_login_register">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textEditEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Email atau nomor telepon"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textLayoutPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/edittext_login_register">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textEditPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textPassword"
+            android:hint="Kata sandi"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textLupaPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lupa kata sandi?"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:textAlignment="textEnd"
+        android:textColor="#88898C"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MASUK"
+        android:background="@drawable/button_login_register"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Belum punya akun? "
+            android:textAlignment="textEnd"
+            android:textColor="#88898C"/>
+        <TextView
+            android:id="@+id/textRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Daftar sekarang"
+            android:textAlignment="textStart"
+            android:textColor="#3E73DF"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

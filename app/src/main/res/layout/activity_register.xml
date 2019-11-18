@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_gravity="start"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_title_register"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textLayoutNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_login_register">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textEditNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Nama Lengkap"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textLayoutEmailReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_login_register">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textEditEmailReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textEmailAddress"
+            android:hint="Email"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textLayoutTelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_login_register">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textEditTelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="number"
+            android:hint="No. Telepon"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textLayoutPassReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_login_register">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textEditPassReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textLayoutKonfirmasiPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_login_register">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textEditKonfirmasiPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textPassword"
+            android:hint="Konfirmasi password"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_login_register"
+        android:text="DAFTAR"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

@@ -147,12 +147,25 @@
                                     android:id="@+id/kostPutra"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent">
-                                    <ImageView
+                                    <LinearLayout
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:layout_centerInParent="true"
                                         android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:src="@drawable/ic_pria"
-                                        android:layout_centerInParent="true"/>
-                                </RelativeLayout>
+                                        android:layout_height="wrap_content">
+                                        <ImageView
+                                            android:id="@+id/catPutra"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_pria"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Kost Pria"
+                                            android:textColor="@android:color/white"
+                                            android:textStyle="bold"/>
+                                    </LinearLayout>
+                                    </RelativeLayout>
 
                             </LinearLayout>
                             <LinearLayout
@@ -168,11 +181,24 @@
                                     android:id="@+id/kostPutri"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent">
-                                    <ImageView
+                                    <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:src="@drawable/ic_wanita"
-                                        android:layout_centerInParent="true"/>
+                                        android:orientation="vertical"
+                                        android:layout_centerInParent="true"
+                                        android:gravity="center">
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_wanita"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textStyle="bold"
+                                            android:text="Kost Putri"
+                                            android:textColor="@android:color/white"/>
+                                    </LinearLayout>
+
                                 </RelativeLayout>
 
                             </LinearLayout>
@@ -194,11 +220,23 @@
                                     android:id="@+id/kostCampur"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent">
-                                    <ImageView
+                                    <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:src="@drawable/ic_campur"
-                                        android:layout_centerInParent="true"/>
+                                        android:orientation="vertical"
+                                        android:gravity="center"
+                                        android:layout_centerInParent="true">
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_campur"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@android:color/white"
+                                            android:text="Kost Campur"
+                                            android:textStyle="bold"/>
+                                    </LinearLayout>
                                 </RelativeLayout>
                             </LinearLayout>
                             <LinearLayout
@@ -214,11 +252,24 @@
                                     android:id="@+id/kontrakan"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent">
-                                    <ImageView
+                                    <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:src="@drawable/ic_kontrakan"
-                                        android:layout_centerInParent="true"/>
+                                        android:orientation="vertical"
+                                        android:gravity="center"
+                                        android:layout_centerInParent="true">
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_kontrakan"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textStyle="bold"
+                                            android:textColor="@android:color/white"
+                                            android:text="Kontrakan"/>
+                                    </LinearLayout>
+
                                 </RelativeLayout>
                             </LinearLayout>
 

@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } finally {
-                    startActivity(new Intent(MainActivity.this, MenuActivity.class));
+                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
                     finish();
                 }
             }
